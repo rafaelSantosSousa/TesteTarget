@@ -8,30 +8,31 @@ public class Exercicio_4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        float sp = 67.83643F;
-        float rj = 36.67866F;
-        float mg = 29.22988F;
-        float es = 27.16548F;
-        float outros = 19.84953F;
+        double sp = 67.83643F;
+        double rj = 36.67866F;
+        double mg = 29.22988F;
+        double es = 27.16548F;
+        double outros = 19.84953F;
 
-        float soma = sp + rj + mg + es + outros;
+        double soma = sp + rj + mg + es + outros;
      System.out.println(soma);
 
-        float csp = ((sp*soma)/100);
-        float crj = ((rj*soma)/100);
-        float cmg = ((mg*soma)/100);
-        float ces= ((es*soma)/100);
-        float cout= ((outros*soma)/100);
+        double percentualSP = ((sp*100)/soma);
+        double percentualRJ = ((rj*100)/soma);
+        double percentualMG = ((mg*100)/soma);
+        double percentualES= ((es*100)/soma);
+        double percentualOutros= ((outros*100)/soma);
 
-        System.out.printf("%.1f", csp);
-        sc.nextLine();
-        System.out.printf("%.1f",crj);
-        sc.nextLine();
-        System.out.printf("%.1p",cmg);
-        sc.nextLine();
-        System.out.printf("%.1p",ces);
-        sc.nextLine();
-        System.out.printf("%.1p",cout);
+        System.out.printf("Percentual de São Paulo: %.2f",percentualSP);
+        System.out.print(" %\n");
+        System.out.printf("Percentual do Rio de Janeiro: %.2f",percentualRJ);
+        System.out.print(" %\n");
+        System.out.printf("Percentual de Minas Gerais: %.2f",percentualMG);
+        System.out.print(" %\n");
+        System.out.printf("Percentual de Espirito Santos: %.2f",percentualES);
+        System.out.print(" %\n");
+        System.out.printf("Percentual de outros estados: %.2f",percentualOutros);
+
 
     }
 }
