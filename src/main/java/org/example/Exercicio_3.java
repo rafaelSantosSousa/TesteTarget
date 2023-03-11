@@ -1,2 +1,7 @@
-package org.example;public class Exercicio_3 {
+package org.example;
+
+public class Exercicio_3 {
+    public static void main(String[] args) {
+
+    }
 }
